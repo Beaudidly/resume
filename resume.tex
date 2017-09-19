@@ -1,0 +1,141 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% This is a modified ONE COLUMN version of
+% the following template:
+%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.1 (30/4/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \documentclass[]{deedy-resume-openfont}
+
+    \begin{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     Profile
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{Austin}{Bodzas}{abb6499@rit.edu | 9089100098 | Rochester, New York | github.com/Beaudidly}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     Education
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Education}
+\raggedright
+
+\runsubsection{Raritan Valley Community College}\descript{| AS Computer Science}\hfill \location{Branchburg, NJ | December 2015}\\
+GPA: 3.75\\
+
+\runsubsection{Rochester Institute of Technology}\descript{| BS Computer Science}\hfill \location{Rochester, NY | December 2018}\\
+GPA: 3.7\\
+
+\sectionsep
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     Experience
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Experience}
+\runsubsection{L3 Technologies GCS}\descript{| Software Engineer Co-Op}\hfill \location{Victor, NY | January 2017 – August 2017}
+\begin{tightemize}
+	\item Developed embedded software in C for AVR devices
+    \item Gained experience in C++ development for embedded Linux
+    \item Worked heavily with serial communication
+    \item Created driver interfaces to ancillary hardware
+\end{tightemize}
+\sectionsep
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     Skills
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Skills}
+\raggedright
+\begin{tabular}{ l l }
+    \descript{Languages} & {\location{C++, C, Python, Java, \LaTeX{}, JavaScript}} \\
+    \descript{Operating Systems} & {\location{Linux (Arch, Ubuntu), OSX, Windows}} \\
+    \descript{Software} & {\location{SVN, Git, CMake, GNU coreutils, Make, FreeRTOS}} \\
+    \descript{Misc} & {\location{SPI, I\textsuperscript{2}C, Serial, Oscilliscope operation}}
+\end{tabular}
+\sectionsep
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     Projects
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Projects}
+\raggedright
+
+\runsubsection{\large{team lead for RIT space exploration CubeSat avionics: Fall 2016 - Spring 2017}}
+\descript{}\hfill \location{}\\
+Working as Team Lead for the Avionics subsystem for the RIT Space Exploration student faculty
+research group (SPEX). Responsible for keeping the team on track for planning, designing, and developing
+software thatruns the main computer onboard the cube satellite. The Avionic
+team's task was to research the hardware and software necessary to control
+a Cube Satellite in orbit and complete a scientific mission. Gained knowledge
+on the increased challenge of computation in a space environment along with
+technologies such as Real Time Operating Systems.
+\bigbreak
+\runsubsection{\large{High Altitude Balloon (HAB) Telemetry}}
+\descript{}\hfill \location{}\\
+Designed and developed telemetry software for SPEX HAB’s December 2016 launch. Responsibilities of
+the software was to log atmospheric pressure, temperature, acceleration,rotation, and magnetic data to an
+SD card. The project was written in C++, connecting to various sensors over serial bus protocols, SPI and
+I\textsuperscript{2}C. Analysis of this recovered telemetry data proved critical to diagnosing a mid-flight mechanical failure.
+\sectionsep
+
+%%%
+% Current Projects
+%%%
+\raggedright
+
+\runsubsection{\large{IREC}}
+\descript{}\hfill \location{}\\
+IREC stuff
+
+\bigbreak
+\runsubsection{\large{microHab}}
+\descript{}\hfill \location{}\\
+MicroHab stuff
+\ 
+\end{document}
