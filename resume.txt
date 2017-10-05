@@ -1,0 +1,64 @@
+Austin Bodzas
+
+email: abb6499@rit.edu
+phone: 908-910-0098
+github: github.com/Beaudidly
+
+Available: January - August 2018
+Objective: To obtain a cooperative education position as a Software Engineer
+    and to expand experience in software development
+
+Education
+---------
+Raritan Valley Community College - AS Computer Science - Branchburg, NJ - December 2015
+    GPA: 3.75
+Rochester Institute of Technology - BS Computer Science - Rochester, NY - December 2018
+    GPA: 3.70
+    Courses: Mechanics of Programming, Concepts of Parallel and Distributed Systems,
+    Intro to Computer Science Theory, Intro to Software Engineering, Intro to
+    Algorithms, Programming Language Concepts, Professional Communications,
+    Principles of Data Management
+
+
+Experience
+----------
+L3 Technologies GCS - Software Engineer Co-Op - Victor, NY - January - August 2017
+    - Developed embedded software in C for AVR devices
+    - Gained experience in C++ development for embedded Linux
+    - Worked in-depth with serial communication
+    - Created driverinterfaces to ancillary hardware
+
+
+Skills
+------
+Languages - C++, C, Python, Java, Latex, JavaScript
+Operating Systems - Linux (Arch, Ubuntu), OSX, Windows
+Software - SVN, Git, CMake, GNU coreutils, Make, FreeRTOS
+Misc. - SPI, I2C, Serial, Oscilliscope operation
+
+Projects
+--------
+Team Lead for RIT Space Exploration CubeSat Avionics - Fall 2016 - Spring 2017
+    Worked as Team Lead forthe Avionics subsystem forthe RIT Space Exploration student faculty research group
+    (SPEX). Was responsible for keeping the team on track for planning, designing, and developing software thatruns the
+    main computer onboard the cube satellite. The Avionic team’s task was to research the hardware and software
+    necessary to control a Cube Satellite in orbit and complete a scientific mission. Gained knowledge on technologies
+    such as Real Time operating systems along with the increased challenge of computation in a space environment.
+
+High Altitude Balloon (HAB) Telemetry
+    Designed and developed telemetry software for SPEX HAB’s December 2016 launch. Functionalities of the software
+    were to log atmospheric pressure, temperature, acceleration,rotation, and magnetic data to an SD card. The project
+    was written in C++, connecting to various sensors over serial bus protocols, SPI and I²C. Analysis of the recovered
+    telemetry data proved critical to diagnosing a mid-flight mechanical failure.
+
+
+Current Projects
+----------------
+Space Dynamics Laboratory Payload challenge
+    SPEX is designing the payload, Hyperion, to serve as a rocket black box. Hyperion will also have protective fabric
+    landing airbags, similarin concept to those of older Mars rovers. Personal focus forthis project involves
+    computational hardware and sensor selection, as well as software design.
+
+Project Lead for MicroHab
+    Goals are to minimize the cost and integration time for High Altitude Balloon projects. Roles involved are organizing a
+    multidisciplinary team and educating members on embedded software development.
