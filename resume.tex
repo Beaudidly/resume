@@ -64,7 +64,8 @@
 \section{Objective}
 \raggedright
 \runsubsection{Full-time}
-To obtain a position as a Software Engineer starting in the Summer of 2019.
+%To develop embedded software for spacecraft. Available to start in the Summer of 2019.
+To advance the state of planetary exploration through the development of innovative embedded software. Available Summer of 2019.
 
 \descript{}\hfill \location{}\\
 \section{Education}
@@ -77,6 +78,18 @@ GPA: 3.7\\
 
 \runsubsection{Raritan Valley Community College}\descript{| AS Computer Science}\hfill \location{Branchburg, NJ | Dec 2016}\\
 GPA: 3.75\\
+\sectionsep
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     Skills
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Skills}
+\raggedright
+\begin{tabular}{ l l }
+	\descript{Programming Languages} & {\location{C, C++, Python, Java, Bash, \LaTeX{}}}   \\
+	\descript{Software}              & {\location{Git, Docker, NASA cFE, Ball Aerospace Cosmos, Bamboo Automated Testing}} \\
+\end{tabular}
 \sectionsep
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
@@ -110,67 +123,41 @@ GPA: 3.75\\
 
 \worksubheader{Software in the Loop Environment for Testing Flight Software (SWIL)}\\
 \begin{tightemize}
-	\item Setup Docker and Docker Compose environment to bring up flight, testbed, and ground software in one network on one machine.
 	\item Created adapters to relay SpaceWire traffic over UDP for testbed and flight software.
-	\item Software in the Loop (SWIL) allows for parallelized testing within a CI/CD system. Allows for portable developer environment across OSes.
+	\item Utilised Docker to develope an environment that increased frequency of testing by a factor of four.
+	\item Enabled developers to rapidly implement features and test on dev machines
+	\item JHU APL Explorer Award granted to DART team for bringing modern software practices to space.
+	\item Attended Dockercon SF, work on SWIL was presented to the main audience.
+	%\item Software in the Loop (SWIL) allows for parallelized testing within a CI/CD system. Allows for portable developer environment across OSes.
 	%Used in development and testing of flight software. Utilizes containerization of flight software (FSW), testbed software (TBSW), and ground software (GSW).  Directly responsible for containerizing Ball Aerospace Cosmos GSW and TBSW. Developed UDP adapter of SpaceWire packets to allow for easy Docker Compose networking between FSW and TBSW.
 	%Docker devops to run fsw development in a reproducible environment and the same setup in Bamboo CI/CD for parallelized automated testing.
 \end{tightemize}
 	
 \worksubheader{Deep Learning for Space – Internal Research and Development (IRAD)}\\
 \begin{tightemize}
-	\item Ported over DART flight software to run on an arm64 Jetson TX2 running Ubuntu
-	\item Adapted DART testbed and ground software for the IRAD to allow for telemetry and command testing.
+	\item Ported over flight software to run on an arm64 Jetson TX2 running Ubuntu
 	\item Developed NASA cFE application to integrate with an image classifier and telemeter classifications
 	\item Implemented ground softare to process incoming data and display on an OpenLayer map using web technology.
 \end{tightemize}
 	%Ported over DART FSW to run on an arm64 Jetson TX2.  Adapted DART TBSW and FSW to work with this IRAD as well for reuse.  Developing a NASA cFE application to integrate with a trained image classifier and transfer files from space. Developed ground software to process downlinked files and visualize classifications using OpenLayer maps.
 
-\worksubheader{JHU APL Explorer Award - DART FSW Team}\\
-	Awarded for the DART's team in utilizing technologies new to the laboratory such as Docker.
+\sectionsep
 
-\worksubheader{Dockercon}\\
-	Attended the Dockercon 2018 San Francisco conference. Work on SWIL was presented to main audience demonstrating the use for containerization in the public space sector.
-	
-\sectionsep
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-%     Skills
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Skills}
-\raggedright
-\begin{tabular}{ l l }
-	\descript{Programming Languages} & {\location{C, C++, Python, Java, Bash, \LaTeX{}}}   \\
-	\descript{Software}              & {\location{Git, Docker, NASA cFE, Ball Aerospace Cosmos, Bamboo Automated Testing}} \\
-\end{tabular}
-\sectionsep
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-%     Projects
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Involvement}
 \raggedright
 
-\runsubsection{{RIT Space Exploration (SPEX) Member}}\hfill\descript{Jan 2016 - Present}
+\worksubheader{RIT Space Exploration (SPEX) Member\hfill Jan 2016 - Present}
 \begin{tightemize}
-	\item Current role as SPEX Technical Coordinator
-	\item Avionics team lead for Cubesat Launch Initiative proposal
-	\item Wrote software for SPEX's Hight Altitude Balloon 3 integraing with various sensors
-	\item Explored potential cubesat payload for testing new memory technologies
+	\item Avionics team lead for Cubesat Launch Initiative proposal.
+	\item Wrote software for SPEX's Hight Altitude Balloon 3 integrating with various sensors.
+	\item Explored potential cubesat payload for testing new memory technologies.
 \end{tightemize}
-\runsubsection{{RIT SPEX Admin - Technical Coordinator}}\hfill\descript{June 2018 - Present}
+\worksubheader{RIT SPEX Admin - Technical Coordinator\hfill June 2018 - Present}
 \begin{tightemize}
-	\item Interact with all the project teams in a managerial role
-	\item Ensure teams have direction needed to achieve objectives
-	\item Act as technical bridge between admins and project members
+	\item Interact with all the project teams in a managerial role.
+	\item Ensure teams have direction needed to achieve objectives.
+	\item Act as technical bridge between admins and project members.
 \end{tightemize}
 	
 \sectionsep
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-%     Awards
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \end{document}
