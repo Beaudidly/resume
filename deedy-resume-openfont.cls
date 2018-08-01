@@ -80,4 +80,4 @@ Last Updated on
 \newcommand{\sectionsep}[0]{\vspace{8pt}}
 
 % Bullet Lists with fewer gaps command
-\newenvironment{tightemize}{\vspace{-1mm}\begin{itemize}\itemsep1pt \parskip1.5pt \parsep1.5pt}{\end{itemize}\vspace{-\topsep}}
+\newenvironment{tightemize}{\vspace{-1mm}\begin{itemize}\itemsep1pt \parskip1.5pt \parsep1.5pt}{\end{itemize}\vspace{1mm}}
