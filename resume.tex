@@ -1,163 +1,93 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% This is a modified ONE COLUMN version of
-% the following template:
-%
-% Deedy - One Page Two Column Resume
-% LaTeX Template
-% Version 1.1 (30/4/2014)
-%
-% Original author:
-% Debarghya Das (http://debarghyadas.com)
-%
-% Original repository:
-% https://github.com/deedydas/Deedy-Resume
-%
-% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
-%
-% This template uses several fonts not included with Windows/Linux by
-% default. If you get compilation errors saying a font is missing, find the line
-% on which the font is used and either change it to a font included with your
-% operating system or comment the line out to use the default font.
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-% TODO:
-% 1. Integrate biber/bibtex for article citation under publications.
-% 2. Figure out a smoother way for the document to flow onto the next page.
-% 3. Add styling information for a "Projects/Hacks" section.
-% 4. Add location/address information
-% 5. Merge OpenFont and MacFonts as a single sty with options.
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-% CHANGELOG:
-% v1.1:
-% 1. Fixed several compilation bugs with \renewcommand
-% 2. Got Open-source fonts (Windows/Linux support)
-% 3. Added Last Updated
-% 4. Move Title styling into .sty
-% 5. Commented .sty file.
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-% Known Issues:
-% 1. Overflows onto second page if any column's contents are more than the
-% vertical limit
-% 2. Hacky space on the first bullet point on the second column.
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    \documentclass[]{deedy-resume-openfont}
+%% RESUME -Austin Bodzas
+%% Pulled from Phil Linden's https://github.com/runphilrun/resume
+\documentclass[10pt,final,sans]{resume}
 
-    \begin{document}
-    
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-%     Profile
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\namesection{Austin}{Bodzas}{abb6499@rit.edu | (908) 910-0098 | Rochester, NY}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-%     Education
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\setlength\headheight{36pt} % make header tall enough
+\name{AUSTIN BODZAS}
+\lcontact{
+  \begin{tabular}{@{}ll@{}}
+    \faLinkedin & linkedin.com/in/austinbodzas/ \\
+    %\faAngellist & angel.co/austin-bodzas \\
+    \faGithub & github.com/Beaudidly \\
+    %\faAngellist & angel.co/austin-bodzas
+    %\faGithub & \href{https://github.com/runphilrun/}{runphilrun} \\
+    %\faGlobe & \href{https://runphilrun.github.io/}{runphilrun.github.io} 
+  \end{tabular}
+}
+\rcontact{
+  \begin{tabular}{@{}r@{}}
+    abb6499@rit.edu \\
+    Rochester, NY \\
+    (908) 910-0098
+  \end{tabular}
+}
+
 \section{Objective}
-\raggedright
-\runsubsection{Full-time}
-%To develop embedded software for spacecraft. Available to start in the Summer of 2019.
-To advance the state of planetary exploration through the development of innovative embedded software. Available Summer of 2019.
-
-\descript{}\hfill \location{}\\
+To advance the state of space exploration through the development of innovative embedded software.\\
+%To advance the state of space exploration through the development of innovative software.\\
+%To advance the state of planetary exploration through the development of innovative embedded software.\\
+%To advance the state of modern technology through the development of innovative software. \\
+Available for full-time employment July of 2019.
 \section{Education}
-\raggedright
+\headerwithlabel{Rochester Institute of Technology}{Rochester, NY}{Jan 2016 -- May 2019}
+Computer Science, Bachelor of Science \\
+GPA: 3.7
 
-\runsubsection{Rochester Institute of Technology}\descript{| BS Computer Science}\hfill \location{Rochester, NY | May 2019}\\
-GPA: 3.7\\
-\sectionsep
-  
+\headerwithlabel{Raritan Valley Community College}{Branchburg, NJ}{Sep 2014 -- Dec 2015}
+Computer Science, Associate of Science \\
+GPA: 3.75
+\section{Technical Skills}
+%Systems Engineering, Mechanical Engineering, Aerospace Engineering, Electro-Optical Engineering, Image Processing, MATLAB, Python, OpenCV, Git, {\textrm \LaTeX}, Solidworks, NX8.5, MS Project, MS Visio, MS Office Superuser, Linux, Controls
+Languages - C, Python, C++, Java, Bash, \LaTeX{}, Javascript \\
+Software - Git, Docker, NASA cFE, Ball Aerospace COSMOS, Bamboo Automated Testing, Linux, FreeRTOS
 
-\runsubsection{Raritan Valley Community College}\descript{| AS Computer Science}\hfill \location{Branchburg, NJ | Dec 2016}\\
-GPA: 3.75\\
-\sectionsep
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-%     Skills
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Skills}
-\raggedright
-\begin{tabular}{ l l }
-	\descript{Programming Languages} & {\location{C, C++, Python, Java, Bash, \LaTeX{}}}   \\
-	\descript{Software}              & {\location{Git, Docker, NASA cFE, Ball Aerospace Cosmos, Bamboo Automated Testing}} \\
-\end{tabular}
-\sectionsep
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-%     Experience
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Experience}
-\runsubsection{L3 Global Communications Solutions}\hfill\descript{Software Engineer Co-Op}\\
-\hfill \location{Victor, NY | Jan 2017 – Aug 2017}\\
-\worksubheader{VSAT Ground Stations}
-\begin{tightemize}
-	\item Developed embedded software in C for AVR devices
-    \item Gained experience in C++ development for embedded Linux
-    \item Worked in-depth with serial communication
-    \item Created driver interfaces to ancillary hardware
-\end{tightemize}
-\sectionsep
+\section{Engineering Experience}
 
-\runsubsection{Johns Hopkins Applied Physics Laboratory}\hfill\descript{Software Engineer Co-Op}\\
-\hfill \location{Laurel, MD | Jan 2018 – Present}\\
-	\worksubheader{NASA DART - Double Asteroid Redeflection Test Mission}
-	\begin{tightemize}
-		\item Wrote flight software utilizing NASA Core Flight Executive.
-		\item Adapted Ball Aerospace Cosmos to work with DART's command and data handling system.
-		\item Leveraged code reuse by porting over software from Parker Solar Probe for DART.
-		\item Worked on DART's software testbed developing in C++, also utilizing NASA cFE.
-	%%Memeber of the Flight Software team.  Responsible for adapting Ball Aerospace Cosmos ground software (GSW) to DART's command and telemetry system. 
-	%%Gained experience with NASA Core Flight Executive by supporting DART applications.  Leveraged code reuse by porting over software from a previous APL mission, Parker Solar Probe.
-	%%In the process discovered a bug in Parker Solar Probe's code that was fixed and set to launch in August.
-	\end{tightemize}
-
-\worksubheader{Software in the Loop Environment for Testing Flight Software (SWIL)}\\
-\begin{tightemize}
-	\item Created adapters to relay SpaceWire traffic over UDP for testbed and flight software.
-	\item Utilised Docker to develope an environment that increased frequency of testing by a factor of four.
-	\item Enabled developers to rapidly implement features and test on dev machines
-	\item JHU APL Explorer Award granted to DART team for bringing modern software practices to space.
-	\item Attended Dockercon SF, work on SWIL was presented to the main audience.
-	%\item Software in the Loop (SWIL) allows for parallelized testing within a CI/CD system. Allows for portable developer environment across OSes.
-	%Used in development and testing of flight software. Utilizes containerization of flight software (FSW), testbed software (TBSW), and ground software (GSW).  Directly responsible for containerizing Ball Aerospace Cosmos GSW and TBSW. Developed UDP adapter of SpaceWire packets to allow for easy Docker Compose networking between FSW and TBSW.
-	%Docker devops to run fsw development in a reproducible environment and the same setup in Bamboo CI/CD for parallelized automated testing.
-\end{tightemize}
-	
-\worksubheader{Deep Learning for Space – Internal Research and Development (IRAD)}\\
-\begin{tightemize}
-	\item Ported over flight software to run on an arm64 Jetson TX2 running Ubuntu
-	\item Developed NASA cFE application to integrate with an image classifier and telemeter classifications
-	\item Implemented ground softare to process incoming data and display on an OpenLayer map using web technology.
-\end{tightemize}
-	%Ported over DART FSW to run on an arm64 Jetson TX2.  Adapted DART TBSW and FSW to work with this IRAD as well for reuse.  Developing a NASA cFE application to integrate with a trained image classifier and transfer files from space. Developed ground software to process downlinked files and visualize classifications using OpenLayer maps.
-
-\sectionsep
-
-\section{Involvement}
-\raggedright
-
-\worksubheader{RIT Space Exploration (SPEX) Member\hfill Jan 2016 - Present}
-\begin{tightemize}
-	\item Avionics team lead for Cubesat Launch Initiative proposal.
-	\item Wrote software for SPEX's Hight Altitude Balloon 3 integrating with various sensors.
-	\item Explored potential cubesat payload for testing new memory technologies.
-\end{tightemize}
-\worksubheader{RIT SPEX Admin - Technical Coordinator\hfill June 2018 - Present}
-\begin{tightemize}
-	\item Interact with all the project teams in a managerial role.
-	\item Ensure teams have direction needed to achieve objectives.
-	\item Act as technical bridge between admins and project members.
-\end{tightemize}
-	
-\sectionsep
+% APL 
+\headerwithlabel{Johns Hopkins Applied Physics Laboratory}{Software Engineer Co-Op | Laurel, MD}{Jan 2018 -- Present}
+NASA DART - Double Asteroid Redirection Test Mission
+\begin{itemize}
+  \item Wrote flight software utilizing NASA Core Flight Executive
+  \item Adapted Ball Aerospace COSMOS to work with DART's command and data handling system
+  \item Leveraged code reuse by porting over software from Parker Solar Probe for DART
+  \item Collaborated on DART's software testbed developing in C++, also utilizing NASA cFE
+\end{itemize} 
+Software in the Loop Environment for Testing Flight Software (SWIL)
+\begin{itemize}
+  \item Created adapters to relay SpaceWire traffic over UDP for testbed and flight software
+  \item Utilized Docker to develop an environment that increased frequency of testing by a factor of four
+  \item Enabled developers to rapidly implement features and test on dev machines
+  \item JHU APL Explorer Award granted to DART team for bringing modern software practices to space
+  \item Attended Dockercon San Francisco, work on SWIL was presented to the main audience
+\end{itemize}
+Deep Learning for Space –- Internal Research and Development (IRAD)
+\begin{itemize}
+  \item Ported over flight software to run on an ARM64 Jetson TX2 running Ubuntu
+  \item Developed NASA cFE application to integrate with an image classifier and telemeter classifications
+  \item Implemented ground software to process incoming data and display on an OpenLayer map using web technology
+\end{itemize}
+% ---
+\headerwithlabel{L3 Global Communications Solutions}{Software Engineer Co-Op | Victor, NY}{Jan -- Aug 2017}
+VSAT Ground Stations
+\begin{itemize}
+  \item Developed embedded software in C for AVR devices
+  \item Gained experience in C++ development for embedded Linux
+  \item Worked in-depth with serial communication
+  \item Created driver interfaces to ancillary hardware
+\end{itemize}
+\section{Additional Experience}
+\headerwithlabel{RIT Space Exploration (SPEX)}{Rochester, NY}{Jan 2016 -- Present}
+Member
+\begin{itemize}
+  \item Served as Avionics team lead for CubeSat Launch Initiative proposal
+  \item Wrote software for SPEX's Hight Altitude Balloon 3 integrating with various sensors
+  \item Explored potential CubeSat payload for testing new memory technologies
+\end{itemize}
+Technical Coordinator -- Admin \hfill Jun 2018 -- Present
+\begin{itemize}
+  \item Interact with all project teams in a managerial role
+  \item Ensure teams have direction needed to achieve objectives
+  \item Act as technical bridge between admins and project members
+\end{itemize}
 \end{document}
