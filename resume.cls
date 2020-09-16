@@ -23,17 +23,17 @@
 \DeclareOption{sans}{\AtBeginDocument{\renewcommand{\familydefault}{\sfdefault}}}
 \DeclareOption{roman}{\AtBeginDocument{\renewcommand{\familydefault}{\rmdefault}}}
 
-\ExecuteOptions{letterpaper,10pt,final} % execute default options
+\ExecuteOptions{letterpaper,10pt,final} % execute default options2
 \ProcessOptions\relax
 \LoadClass{article}
 % -------
 
 % ----- font awesome stuff ---
-\usepackage{fontspec}
+%\usepackage{fontspec}
 
-\defaultfontfeatures{
-    Path = /usr/local/texlive/2018/texmf-dist/fonts/opentype/public/fontawesome/ }
-\usepackage{fontawesome}
+%\defaultfontfeatures{
+%    Path = /usr/local/texlive/2018/texmf-dist/fonts/opentype/public/fontawesome/ }
+%\usepackage{fontawesome}
 % -----
 
 % ========
@@ -48,7 +48,7 @@
 \RequirePackage{url}      % insert links
 \RequirePackage[T1]{fontenc} % T1 font encoding
 \RequirePackage{lmodern}  % use Latin Modern Sans Serif
-\RequirePackage{fontawesome} % high quality web icons
+%\RequirePackage{fontawesome} % high quality web icons
 % --------
 
 % ======
@@ -102,5 +102,5 @@
 
 % TABLES AND LISTS
 \setlist[itemize]{nosep} % kill vertical spacing
-\setlist{nosep,after=\vspace{1em}}
+%\setlist{nosep,after=\vspace{1em}}
 \renewcommand{\labelitemi}{-~}
