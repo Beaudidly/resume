@@ -102,5 +102,5 @@
 
 % TABLES AND LISTS
 \setlist[itemize]{nosep} % kill vertical spacing
-%\setlist{nosep,after=\vspace{1em}}
+\setlist{nosep,after=\vspace{.5em}}
 \renewcommand{\labelitemi}{-~}
